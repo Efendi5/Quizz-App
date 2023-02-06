@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  margin: 0;
+  font-family: system-ui;
+  position: relative;
+}
+.header {
+  background: black;
+  color: white;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  padding: 10px;
+  position: sticky;
+  z-index: 1;
+}
+.header_text {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
