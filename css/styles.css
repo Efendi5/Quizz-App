@@ -61,7 +61,7 @@ nav ul {
   justify-content: space-between;
 }
 nav ul li {
-  margin: 0 5px;
+  margin: 5px;
 }
 nav a {
   color: white;
