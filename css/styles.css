@@ -10,7 +10,6 @@ body {
   background: black;
   color: white;
   height: 50px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
   padding: 10px;
   position: sticky;
   z-index: 1;
