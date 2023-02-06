@@ -21,7 +21,7 @@ body {
   margin: 0;
 }
 .card {
-  margin: 20px 10%;
+  margin: 40px 10%;
   border: 5px solid black;
   padding: 15% 20%;
   border-radius: 1rem;
@@ -30,6 +30,7 @@ body {
 }
 .card_header {
   margin: 0 0 25px 0;
+  padding: 10px;
   background: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -43,11 +44,20 @@ body {
   font-size: 16px;
   padding: 15px 32px;
   text-align: center;
-  display: inline-block;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 1rem;
 }
+
+.bookmark {
+  border: 2px solid black;
+  font-size: 2em;
+  padding: 6px 10px;
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  border-radius: 50%;
+
 footer {
   background: black;
   color: white;
