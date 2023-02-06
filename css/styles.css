@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 0;
+  border: 2px solid white;
 }
 .card {
   margin: 40px 10%;
