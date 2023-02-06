@@ -75,6 +75,8 @@ nav ul li {
 nav a {
   color: white;
   text-decoration: none;
+  padding: 5px;
+  border: 2px solid white;
 }
 .tags {
   border: 2px solid black;
