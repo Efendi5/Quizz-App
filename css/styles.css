@@ -1,5 +1,15 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #00ffff;
+  margin: 0; /*set margin to 0 on all sides */
+  font-family: system-ui;
 }
 
 body.dark {
@@ -7,56 +17,58 @@ body.dark {
   color: white;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: lightblue;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
 .header {
   background: black;
-  color: white;
-  height: 50px;
-  padding: 10px;
+  color: #fafafa;
+  height: 40px;
   position: sticky;
   top: 0;
   z-index: 1;
 }
-.header_text {
+
+.header-text {
   display: flex;
   justify-content: center;
   margin: 0;
   border: 2px solid white;
 }
+
 .card {
   margin: 40px 10%;
-  border: 5px solid black;
-  padding: 15% 20%;
-  border-radius: 1rem;
+  border: 10px solid #008000;
+  padding: 5% 10%;
+  border-radius: 5rem;
   position: relative;
   scroll-margin-top: 100px;
+  background: #fafafa;
 }
-.card_header {
+
+.card-header {
+  display: flex;
+  justify-content: center;
   margin: 0 0 25px 0;
   padding: 10px;
   background: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  border-radius: 1rem;
+  font-size: 15px;
+  border-radius: 10rem;
 }
+
 .button {
+  display: flex;
+  justify-content: center;
   border: none;
   background-color: black;
   color: white;
-  font-size: 16px;
-  padding: 15px 32px;
-  text-align: center;
-  margin: 4px 2px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin: 65px;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 10rem;
 }
+
 .bookmark {
   border: 2px solid black;
   font-size: 2em;
@@ -66,31 +78,35 @@ body {
   right: 30px;
   border-radius: 50%;
 }
+
 footer {
   background: black;
   color: white;
-  height: 90px;
+  height: 80px;
   position: sticky;
   bottom: 0;
 }
+
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
+
 nav ul li {
   margin: 10px;
 }
+
 nav a {
   color: white;
   text-decoration: none;
   padding: 5px;
   border: 2px solid white;
 }
+
 .tags {
-  border: 2px solid black;
-  font-size: 20px;
-  padding: 2px 2px;
+  font-size: 15px;
+  padding: 5px;
   margin: 20px;
   position: absolute;
   bottom: 1px;
@@ -98,31 +114,35 @@ nav a {
   color: white;
   background: black;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30%;
 }
-.tags_two {
-  border: 2px solid black;
-  font-size: 20px;
-  padding: 2px 2px;
+
+.tags-two {
+  font-size: 15px;
+  padding: 5px;
   margin: 20px;
   position: absolute;
   bottom: 1px;
-  left: 80px;
+  left: 70px;
   color: white;
   background: black;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30%;
 }
-.tags_three {
-  border: 2px solid black;
-  font-size: 20px;
-  padding: 2px 2px;
+
+.tags-three {
+  font-size: 15px;
+  padding: 5px;
   margin: 20px;
   position: absolute;
   bottom: 1px;
-  left: 165px;
+  left: 140px;
   color: white;
   background: black;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30%;
 }
+
 .button--black {
   padding: 5px 10px;
   margin: 20px;
@@ -132,14 +152,17 @@ nav a {
   font-size: 15px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .button--black--1 {
   background-color: black;
   color: white;
 }
+
 .button--black--2 {
   background-color: white;
   color: black;
 }
+
 .about {
   padding: 5px 10px;
   font-size: 20px;
@@ -149,6 +172,7 @@ nav a {
   border: 2px solid black;
   border-radius: 10%;
 }
+
 .active-choice {
   background-color: rgb(72, 181, 33);
 }
