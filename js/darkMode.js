@@ -12,4 +12,6 @@ lightmodeButton.addEventListener("click", () => {
   bodyElement.classList.remove("dark");
 });
 
-// Zuerst wird mit dem queryselector das erste Element im Dokument
+// Zuerst wird mit dem queryselector das erste Element im Dokument zurück gegeben.
+// Mit dem addeventlistener wird das Klick event der body Klasse dark hinzugefügt
+// Mit dem LightmodeButton wird das event wieder removed
