@@ -65,9 +65,9 @@ body.dark {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
-  margin: 65px;
+  margin: 60px;
   cursor: pointer;
-  border-radius: 10rem;
+  border-radius: 5rem;
 }
 
 .bookmark {
@@ -84,25 +84,25 @@ footer {
   background: black;
   color: white;
   height: 80px;
-  position: sticky;
+  width: 100%;
+  position: fixed;
   bottom: 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 nav ul li {
-  margin: 10px;
+  margin: 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  padding: 5px;
-  border: 2px solid white;
+  padding: 10px;
 }
 
 .tags {
@@ -180,12 +180,22 @@ nav a {
 
 .card-profil {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: 40px 10%;
+  margin: 20px 10%;
   border: 10px solid #008000;
   padding: 5% 10%;
   border-radius: 5rem;
   position: relative;
   scroll-margin-top: 100px;
+}
+
+.profile__card-img {
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid black;
+}
+
+.name-h1 {
+  margin-left: 40px;
 }
