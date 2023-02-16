@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Quizz-App</title>
   </head>
-  <body>
+  <body data-js="body">
     <header class="header">
       <h1 class="header-text">Quizz-App</h1>
     </header>
     <main>
       <section class="card">
         <p class="card-header">Was bedeutet HTML?</p>
-        <button class="button">Show Answer</button>
+        <button type="button" id="button" data-js="success" class="button">
+          Show Answer
+        </button>
+        <p class="card__answer design" id="design" data-js="show-answer-button">
+          Hypertext Markup Language
+        </p>
         <button class="bookmark">HI</button>
         <p class="tags">#html</p>
         <p class="tags-two">#flexbox</p>
@@ -22,7 +27,7 @@
       </section>
       <section class="card">
         <p class="card-header">Wie fügt man ein Bild in eine HTML-Seite ein?</p>
-        <button class="button">Show Answer</button>
+        <button type="button" class="button">Show Answer</button>
         <button class="bookmark">HI</button>
         <p class="tags">#html</p>
         <p class="tags-two">#flexbox</p>
@@ -30,7 +35,7 @@
       </section>
       <section class="card">
         <p class="card-header">Wie kann man einen Link in HTML erstellen?</p>
-        <button class="button">Show Answer</button>
+        <button type="button" class="button">Show Answer</button>
         <button class="bookmark">HI</button>
         <p class="tags">#html</p>
         <p class="tags-two">#flexbox</p>
@@ -40,7 +45,7 @@
         <p class="card-header">
           Wie kann man eine Überschrift in HTML erstellen?
         </p>
-        <button class="button">Show Answer</button>
+        <button type="button" class="button">Show Answer</button>
         <button class="bookmark">HI</button>
         <p class="tags">#html</p>
         <p class="tags-two">#flexbox</p>
@@ -50,7 +55,7 @@
         <p class="card-header">
           Was ist ein HTML-Formular und wofür wird es verwendet?
         </p>
-        <button class="button">Show Answer</button>
+        <button type="button" class="button">Show Answer</button>
         <button class="bookmark">HI</button>
         <p class="tags">#html</p>
         <p class="tags-two">#flexbox</p>
