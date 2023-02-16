@@ -52,7 +52,7 @@ body.dark {
 }
 
 .card__answer {
-  display: flex;
+  display: none;
   justify-content: center;
   font-size: 15px;
   margin: 20px;
@@ -63,8 +63,8 @@ body.dark {
   border: 2px solid black;
 }
 
-.design {
-  display: none;
+.visible {
+  display: flex;
 }
 
 .card-header {

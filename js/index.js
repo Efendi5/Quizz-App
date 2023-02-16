@@ -1,21 +1,18 @@
 console.clear();
 
-const bodyElement = document.querySelector('[data-js="body"]');
+const revealButton = document.querySelector('[data-js="reveal-button"]');
+const cardAnswer = document.querySelector('[data-js="card-answer"]');
 
-const darkmodeButton = document.querySelector('[data-js="dark-mode-button"]');
-const lightmodeButton = document.querySelector('[data-js="light-mode-button"]');
+revealButton.addEventListener("click", () => {
+  //card answer soll display flex machen
+  // entferne die klasse hidden von card answer
+  cardAnswer.classList.toggle(["visible"]);
+  // wenn klasse von cardAnswer hidden ist,
+  //soll im button der text hide answer stehen
 
-darkmodeButton.addEventListener("click", () => {
-  bodyElement.classList.add("dark");
-});
-
-lightmodeButton.addEventListener("click", () => {
-  bodyElement.classList.remove("dark");
-});
-
-const profilButton = document.querySelector('[data-js="profil-button"]');
-
-profilButton.addEventListener("click", () => {
-  profilButton.classList.add("active-choice");
-  console.log("Selected Profil");
+  if (cardAnswer.classList.contains("visible")) {
+    revealButton.textContent = "Hide answer";
+  } else {
+    revealButton.textContent = "Show answer";
+  }
 });
