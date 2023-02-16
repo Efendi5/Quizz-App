@@ -1,11 +1,12 @@
+/* Hier folgt der Style für den Body */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Gesamtbreite und höhe des Elements*/
 }
 
 main {
-  margin-bottom: 80px;
+  margin-bottom: 80px; /* setzt die Begrenzung zum Boden auf 80px */
 }
 
 body {
@@ -15,12 +16,12 @@ body {
   margin: 0; /*set margin to 0 on all sides */
   font-family: system-ui;
 }
-
+/* Body Dark bei BlackMode */
 body.dark {
   background-color: rgb(50, 51, 58);
   color: white;
 }
-
+/* Hier beginnt der style für den Header */
 .header {
   background: black;
   color: #fafafa;
@@ -38,6 +39,7 @@ body.dark {
   border-radius: 20px;
 }
 
+/* Hier beginnt der Style für den Main Bereich Quizzkarten ect. */
 .card {
   display: flex;
   flex-direction: column;
@@ -51,23 +53,7 @@ body.dark {
   background: #fafafa;
 }
 
-.card__answer {
-  display: none;
-  justify-content: center;
-  font-size: 15px;
-  margin: 20px;
-  padding: 10px;
-  color: white;
-  background: black;
-  border-radius: 10rem;
-  border: 2px solid black;
-}
-
-.visible {
-  display: flex;
-}
-
-.card-header {
+.card-question {
   display: flex;
   justify-content: center;
   margin: 0 0 25px 0;
@@ -86,9 +72,25 @@ body.dark {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
-  margin: 50px;
+  margin: 30px;
   cursor: pointer;
-  border-radius: 5rem;
+  border-radius: 10rem;
+}
+
+.card--answer {
+  display: none;
+  justify-content: center;
+  font-size: 15px;
+  margin: 30px;
+  padding: 10px;
+  color: white;
+  background: black;
+  border-radius: 10rem;
+  border: 2px solid black;
+}
+
+.visible {
+  display: flex;
 }
 
 .bookmark {
@@ -101,6 +103,46 @@ body.dark {
   border-radius: 50%;
 }
 
+.tag-one {
+  font-size: 15px;
+  padding: 5px;
+  margin: 20px;
+  position: absolute;
+  bottom: 1px;
+  left: 20px;
+  color: white;
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30%;
+}
+
+.tag-two {
+  font-size: 15px;
+  padding: 5px;
+  margin: 20px;
+  position: absolute;
+  bottom: 1px;
+  left: 70px;
+  color: white;
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30%;
+}
+
+.tag-three {
+  font-size: 15px;
+  padding: 5px;
+  margin: 20px;
+  position: absolute;
+  bottom: 1px;
+  left: 140px;
+  color: white;
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30%;
+}
+
+/* Hier beginnt der Style für den Bereich Footer */
 footer {
   background: black;
   color: white;
@@ -130,66 +172,12 @@ nav a {
   text-decoration: none;
   padding: 5px;
 }
-
-.tags {
-  font-size: 15px;
-  padding: 5px;
-  margin: 20px;
-  position: absolute;
-  bottom: 1px;
-  left: 20px;
-  color: white;
-  background: black;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 30%;
+/* Sorgt dafür das Style auf welcher Seite man sich befindet */
+.active-choice {
+  background-color: rgb(72, 181, 33);
 }
 
-.tags-two {
-  font-size: 15px;
-  padding: 5px;
-  margin: 20px;
-  position: absolute;
-  bottom: 1px;
-  left: 70px;
-  color: white;
-  background: black;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 30%;
-}
-
-.tags-three {
-  font-size: 15px;
-  padding: 5px;
-  margin: 20px;
-  position: absolute;
-  bottom: 1px;
-  left: 140px;
-  color: white;
-  background: black;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 30%;
-}
-
-.button--black {
-  padding: 5px 10px;
-  margin: 20px;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.button--black--1 {
-  background-color: black;
-  color: white;
-}
-
-.button--black--2 {
-  background-color: white;
-  color: black;
-}
-
+/* Her beginnt der Bereich für das Style im About Bereich */
 .about {
   padding: 5px 10px;
   font-size: 20px;
@@ -198,10 +186,6 @@ nav a {
   font-size: 20px;
   border: 5px solid #008000;
   border-radius: 10%;
-}
-
-.active-choice {
-  background-color: rgb(72, 181, 33);
 }
 
 .card-profil {
@@ -214,7 +198,7 @@ nav a {
   border-radius: 5rem;
   scroll-margin-top: 100px;
 }
-
+/* Hier wird das img im Porfil gestylt */
 .profile__card-img {
   border-radius: 50%;
   display: flex;
@@ -224,4 +208,25 @@ nav a {
 
 .name-h1 {
   margin-left: 45px;
+}
+
+/* Hier beginnt der Style Bereich für den Dark-Mode Button Im Profil Breich*/
+.button--black {
+  padding: 5px 10px;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* Bei BlackMode */
+.button--black--1 {
+  background-color: black;
+  color: white;
+}
+/* Bei LightMode */
+.button--black--2 {
+  background-color: white;
+  color: black;
 }
