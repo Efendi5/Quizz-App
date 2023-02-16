@@ -14,6 +14,7 @@ lightmodeButton.addEventListener("click", () => {
 });
 
 const profilButton = document.querySelector('[data-js="profil-button"]');
+const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 
 profilButton.addEventListener("click", () => {
   profilButton.classList.add("active-choice");
