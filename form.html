@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Quizz-App</title>
+  </head>
+  <body data-js="body">
+    <header class="header">
+      <h1 class="header-text">Quizz-App</h1>
+    </header>
+    <main class="form-main">
+      <form data-js="card-form">
+        <label class="about">Your question:</label>
+        <textarea
+          name="question"
+          type="text"
+          for="text-input"
+          class="form-card"
+          id="text-input"
+          maxlength="150"
+          data-js="text-input"
+        ></textarea>
+        <label class="about">Your answer:</label>
+        <textarea
+          name="answer"
+          type="text"
+          for="text-input"
+          class="form-card"
+          id="text-input"
+          maxlength="150"
+          data-js="text-input"
+        ></textarea>
+        <label class="about">Tag:</label>
+        <input
+          type="text"
+          name="tag"
+          id="text-input"
+          class="form-card"
+          maxlength="150"
+          data-js="text-input"
+        />
+        <button type="submit" class="form-button">Submit</button>
+        <ul class="new---card" data-js="card-container"></ul>
+      </form>
+    </main>
+    <footer>
+      <nav class="footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bookmarks.html">Bookmark</a></li>
+          <li>
+            <a href="form.html"
+              ><button class="active-choice" data-js="profil-button">
+                Form
+              </button></a
+            >
+          </li>
+          <li><a href="profil.html">Profil</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/darkMode.js"></script>
+    <script src="./js/selectedProfil.js"></script>
+    <script src="./js/form.js"></script>
+  </body>
+</html>
